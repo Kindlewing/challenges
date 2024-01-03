@@ -1,8 +1,8 @@
-mod majority_element;
+mod merge_strings_alternate;
 mod two_sum;
 
-use majority_element::solution;
+use merge_strings_alternate::solution;
 
 fn main() {
-    println!("{:?}", solution(vec![2, 2, 1, 1, 1, 2, 2]));
+    println!("{:?}", solution(String::from("abc"), String::from("pqr")));
 }
