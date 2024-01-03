@@ -1,6 +1,8 @@
-mod add_two_numbers;
+mod majority_element;
 mod two_sum;
 
+use majority_element::solution;
+
 fn main() {
-    println!("{:?}", two_sum::solution(vec![2, 7, 11, 15], 9));
+    println!("{:?}", solution(vec![2, 2, 1, 1, 1, 2, 2]));
 }
