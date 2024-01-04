@@ -1,3 +1,5 @@
 pub fn solution(word1: String, word2: String) -> String {
-    word1
+    let mut merged = String::new();
+
+    merged
 }
