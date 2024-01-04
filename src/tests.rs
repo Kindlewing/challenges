@@ -55,4 +55,42 @@ mod tests {
         );
         Ok(())
     }
+
+    #[test]
+    fn test_can_place_flowers_1() -> Result<(), ()> {
+        let flowerbed: Vec<i32> = vec![1, 0, 0, 0, 1];
+        let n: i32 = 1;
+        assert_eq!(can_place_flowers::solution(flowerbed, n), true);
+        Ok(())
+    }
+
+    #[test]
+    fn test_can_place_flowers_2() -> Result<(), ()> {
+        let flowerbed: Vec<i32> = vec![1, 0, 0, 0, 1];
+        let n: i32 = 2;
+        assert_eq!(can_place_flowers::solution(flowerbed, n), false);
+        Ok(())
+    }
+
+    #[test]
+    fn test_can_place_flowers_3() -> Result<(), ()> {
+        let flowerbed: Vec<i32> = vec![1, 0, 0, 0, 0, 1];
+        let n: i32 = 2;
+        assert_eq!(can_place_flowers::solution(flowerbed, n), false);
+        Ok(())
+    }
+
+    #[test]
+    fn test_reverse_vowels_1() -> Result<(), ()> {
+        let s = String::from("hello");
+        assert_eq!(reverse_vowels::solution(s), String::from("holle"));
+        Ok(())
+    }
+
+    #[test]
+    fn test_reverse_vowels_2() -> Result<(), ()> {
+        let s = String::from("leetcode");
+        assert_eq!(reverse_vowels::solution(s), String::from("leotcede"));
+        Ok(())
+    }
 }
