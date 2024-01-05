@@ -1,4 +1,5 @@
 pub mod can_place_flowers;
+pub mod contains_duplicate;
 pub mod gcd_strings;
 pub mod kids_with_candies;
 pub mod merge_strings_alternate;

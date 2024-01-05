@@ -93,4 +93,25 @@ mod tests {
         assert_eq!(reverse_vowels::solution(s), String::from("leotcede"));
         Ok(())
     }
+
+    #[test]
+    fn test_contains_duplicate_1() -> Result<(), ()> {
+        let nums = vec![1, 2, 3, 1];
+        assert_eq!(contains_duplicate::solution(nums), true);
+        Ok(())
+    }
+
+    #[test]
+    fn test_contains_duplicate_2() -> Result<(), ()> {
+        let nums = vec![1, 2, 3, 4];
+        assert_eq!(contains_duplicate::solution(nums), false);
+        Ok(())
+    }
+
+    #[test]
+    fn test_contains_duplicate_3() -> Result<(), ()> {
+        let nums = vec![1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
+        assert_eq!(contains_duplicate::solution(nums), true);
+        Ok(())
+    }
 }
