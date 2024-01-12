@@ -1,3 +1,4 @@
+pub mod binary_search;
 pub mod can_place_flowers;
 pub mod contains_duplicate;
 pub mod gcd_strings;

@@ -114,4 +114,30 @@ mod tests {
         assert_eq!(contains_duplicate::solution(nums), true);
         Ok(())
     }
+
+    #[test]
+    fn test_binary_search_1() -> Result<(), ()> {
+        let haystack = vec![
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        ];
+        let needle = 14;
+        assert_eq!(binary_search::solution(needle, haystack), Some(13));
+        Ok(())
+    }
+
+    #[test]
+    fn test_binary_search_2() -> Result<(), ()> {
+        let haystack: Vec<i32> = (-1..=20).collect();
+        let needle = 9;
+        assert_eq!(binary_search::solution(needle, haystack), Some(4));
+        Ok(())
+    }
+
+    #[test]
+    fn test_binary_search_3() -> Result<(), ()> {
+        let haystack = (1..=4000).collect();
+        let needle = 3000;
+        assert_eq!(binary_search::solution(needle, haystack), Some(2999));
+        Ok(())
+    }
 }
