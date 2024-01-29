@@ -140,4 +140,13 @@ mod tests {
         assert_eq!(binary_search::solution(needle, haystack), Some(2999));
         Ok(())
     }
+
+    #[test]
+    fn test_bubble_sort_1() -> Result<(), ()> {
+        let mut input: Vec<i32> = vec![1, 4, 7, 4, 3];
+
+        let result = bubble_sort::solution(&mut input);
+        assert_eq!(result, vec![1, 3, 4, 4, 7]);
+        Ok(())
+    }
 }
