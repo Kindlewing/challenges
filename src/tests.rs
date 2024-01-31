@@ -140,4 +140,14 @@ mod tests {
         assert_eq!(binary_search::solution(needle, haystack), Some(2999));
         Ok(())
     }
+
+    #[test]
+    fn test_array_permutations_1() -> Result<(), ()> {
+        let nums = vec![0, 2, 1, 5, 3, 4];
+        assert_eq!(
+            array_from_permutation::solution(nums),
+            vec![0, 1, 2, 4, 5, 3]
+        );
+        Ok(())
+    }
 }
