@@ -150,4 +150,11 @@ mod tests {
         );
         Ok(())
     }
+
+    #[test]
+    fn test_search_insert_position() -> Result<(), ()> {
+        let input: Vec<i32> = vec![1, 3, 5, 6];
+        assert_eq!(search_insert_position::solution(input, 7), 2);
+        Ok(())
+    }
 }
